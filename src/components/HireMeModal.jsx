@@ -64,7 +64,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										aria-label="Email"
 									/>
 								</div>
-								<div className="mt-6">
+								{/* <div className="mt-6">
 									<select
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
@@ -82,7 +82,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											</option>
 										))}
 									</select>
-								</div>
+								</div> */}
 
 								<div className="mt-6">
 									<textarea

@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 import { FiClock, FiTag } from 'react-icons/fi';
 
-import ImagePlaceholder from '../../images/ui-project-1.jpg'
+import ImagePlaceholder from '../../images/airbnb.jpg'
 
 const AirbnbAnalysis = () => {
   return (
@@ -47,7 +47,7 @@ const AirbnbAnalysis = () => {
                 <img
                   src={ImagePlaceholder}
                   className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-                  style={{ maxHeight: '350px', width: '100%', height: 'auto' }}
+                  style={{ maxHeight: '5000px', width: '100%', height: 'auto' }}
                   alt="Airbnb Analysis"
                 />
               </div>
@@ -61,23 +61,38 @@ const AirbnbAnalysis = () => {
 			{/*  Single project right section */}
 			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
           <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Airbnb Analysis
           </p>
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, aut maxime? Nam debitis nesciunt dolore ullam ipsam voluptatibus. Esse ipsa sint doloribus dolores perferendis tempora quas molestiae in rem nisi.
+              This project involved a comprehensive analysis of the AirBnB dataset for Seattle in 2016. Utilizing Tableau, a powerful data visualization tool, the aim was to uncover trends, patterns, and insights into the AirBnB market in Seattle. This analysis was geared towards understanding pricing dynamics, occupancy rates, and geographical distribution of properties.
               </p>
+
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, aut maxime? Nam debitis nesciunt dolore ullam ipsam voluptatibus. Esse ipsa sint doloribus dolores perferendis tempora quas molestiae in rem nisi.
+              The project harnessed Tableau's capabilities to manipulate and explore the dataset, which included information like property types, locations, prices, and reviews. The initial phase focused on cleaning and preparing the data for analysis, ensuring accuracy and relevancy for the insights to be derived.
               </p>
+
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, aut maxime? Nam debitis nesciunt dolore ullam ipsam voluptatibus. Esse ipsa sint doloribus dolores perferendis tempora quas molestiae in rem nisi.
+              In-depth analysis revealed significant trends in pricing and occupancy rates throughout the year. The project also identified popular neighborhoods and property types, offering insights into the most profitable and sought-after rental properties in Seattle. Additionally, the analysis provided an understanding of customer preferences and behaviors based on reviews and ratings.
               </p>
+
+              <p
+                className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+              >
+              The use of Tableau enabled the creation of interactive dashboards and visualizations that made the data easily comprehensible and engaging. These visualizations highlighted key aspects of the Seattle AirBnB market, allowing for intuitive interpretation of complex data patterns.
+              </p>
+
+              <p
+                className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+              >
+              The project's findings are invaluable for property owners, investors, and market analysts in the AirBnB sector. By elucidating the dynamics of the Seattle AirBnB market, the analysis provides actionable insights for strategic decision-making in property investment and management. This study exemplifies the power of data visualization in transforming raw data into meaningful business intelligence.
+              </p>
+
         </div>
       </div>
 				

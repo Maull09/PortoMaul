@@ -1,10 +1,11 @@
 // Import images
-import WebImage1 from '../images/web-project-1.jpg';
-import WebImage2 from '../images/web-project-2.jpg';
-import MobileImage1 from '../images/mobile-project-1.jpg';
-import MobileImage2 from '../images/mobile-project-2.jpg';
-import UIImage1 from '../images/ui-project-1.jpg';
-import UIImage2 from '../images/ui-project-2.jpg';
+import WebImage1 from '../images/qtyandcs.jpg';
+import WebImage2 from '../images/Statistik Lengkap UTBK STEI-K22.png';
+import MobileImage1 from '../images/sentimentanalisis.jpg';
+import MobileImage2 from '../images/airbnb.jpg';
+import UIImage1 from '../images/credit_card.jpg';
+import UIImage2 from '../images/Cover (3).png';
+import UIImage3 from '../images/speed.jpg';
 
 export const projectsData = [
 	{
@@ -53,7 +54,7 @@ export const projectsData = [
 		id: 7,
 		title: 'Time Series Forecasting of Average Vehicle Speed Using the XGBoost Algorithm',
 		category: 'Implemented time series forecasting to predict average vehicle speed utilizing the XGBoost algorithm.',
-		img: WebImage1,
+		img: UIImage3,
 		href: '/time-series-forecasting',
 	}
 ];
