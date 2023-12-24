@@ -59,8 +59,9 @@ const AirbnbAnalysis = () => {
 			</div>
 
 			{/*  Single project right section */}
-			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-          <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
+			<div className="w-full sm:w-2/3mt-10 sm:mt-0">
+          <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7 text"
+          >
           Airbnb Analysis
           </p>
               <p
