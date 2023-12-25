@@ -6,9 +6,11 @@ import ProjectInfo from '../../components/projects/ProjectInfo';
 import ProjectRelatedProjects from '../../components/projects/ProjectRelatedProjects';
 import { SingleProjectProvider } from '../../context/SingleProjectContext';
 import { motion } from 'framer-motion';
+
 import { FiClock, FiTag } from 'react-icons/fi';
 
-import ImagePlaceholder from '../../images/Cover (3)2.png'
+import ImagePlaceholder from '../../images/telecom2.jpg'
+
 import {
 	FiFacebook,
 	FiInstagram,
@@ -17,7 +19,8 @@ import {
 	FiYoutube,
   FiGithub
 } from 'react-icons/fi';
-const AutomatedTraffic = () => {
+
+const AirbnbAnalysis = () => {
   return (
     <motion.div
 			initial={{ opacity: 0 }}
@@ -34,7 +37,7 @@ const AutomatedTraffic = () => {
         {/* PROJECT HEADER */}
         <div>
           <p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
-          Automated Traffic Condition Monitoring for Accident Detection Using YOLOv8 
+          Customer Segmentation and Churn Prediction: Strategies for Optimizing Customer Retention in the Telecommunications Industry 
           </p>
           <div className="flex">
             <div className="flex items-center mr-10">
@@ -53,8 +56,8 @@ const AutomatedTraffic = () => {
                 <img
                   src={ImagePlaceholder}
                   className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-                  style={{ width: '100%', height: '100%' }}
-                  alt="AutomatedTraffic"
+                  style={{width: '100%', height: '100%' }}
+                  alt="Airbnb Analysis"
                 />
               </div>
         </div>
@@ -83,46 +86,48 @@ const AutomatedTraffic = () => {
 			</div>
 
 			{/*  Single project right section */}
-			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-          <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-          Automated Traffic Condition Monitoring for Accident Detection Using YOLOv8
+			<div className="w-full sm:w-2/3mt-10 sm:mt-0">
+          <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7 text"
+          >
+          Customer Segmentation and Churn Prediction: Strategies for Optimizing Customer Retention in the Telecommunications Industry 
           </p>
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              This project is dedicated to developing an automated traffic monitoring system that detects road accidents using the YOLOv8 algorithm. Given the high rate of traffic accidents in Indonesia, this system aims to enhance road safety by providing timely and accurate accident detection. This innovation is crucial for rapid emergency response and reducing the overall impact of road accidents.
+              This comprehensive portfolio showcases two pivotal projects in the telecommunications domain: 'Churn Prediction' and 'Customer Segmentation'. Both projects utilize an extensive dataset, aiming to unravel the complexities of customer behavior and enhance service retention.
               </p>
 
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              We employed the YOLOv8 algorithm, the latest in object detection technology, to analyze traffic surveillance footage. The system is designed to identify anomalies indicative of accidents in real-time traffic scenarios. Data from CCTV footage is processed, with each frame being analyzed to detect potential accidents. This setup ensures continuous monitoring and immediate detection of any unusual events on the roads.
+              Each project begins with thorough data exploration, involving a detailed analysis of customer attributes, such as tenure, service preferences, and purchasing behavior. Data preprocessing is a critical step, ensuring high-quality and accurate analysis.
               </p>
 
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              The model was trained and validated on a comprehensive dataset, which included various traffic conditions and accident scenarios. The system not only detects accidents but also provides detailed information such as the location, time, and visual documentation of the incident. This information is crucial for authorities to initiate appropriate and swift action.
-              </p>
-              
-              <p
-                className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
-              >
-              Our results demonstrated high accuracy in accident detection, with the model achieving a significant mean average precision score. The success of this project lies in its ability to provide a fast and reliable means of accident detection, thereby enabling quicker response times from emergency services and potentially saving lives. Additionally, this system can serve as a valuable tool for traffic analysis and city planning.
+              The Churn Prediction project employs advanced machine learning techniques to forecast potential service churn. By analyzing patterns in customer data, this project provides essential insights for devising effective retention strategies.
               </p>
 
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              In conclusion, the project represents a significant advancement in traffic monitoring and accident detection technology. By integrating advanced machine learning algorithms with real-time data analysis, we provide an innovative solution to a pressing societal issue. This system has the potential to revolutionize traffic safety measures and serve as a model for other urban areas facing similar challenges.
+              Complementing the churn analysis, the Customer Segmentation project delves into classifying customers into distinct groups. This segmentation is based on various behavioral and demographic characteristics, enabling personalized marketing approaches.
               </p>
+
+              <p
+                className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+              >
+              Together, these projects offer a holistic view of customer dynamics in the telecom sector. They not only facilitate targeted customer engagement but also pave the way for future enhancements in predictive analytics and customer relationship management.
+              </p>
+
         </div>
       </div>
 				
-        <ProjectRelatedProjects />
+				<ProjectRelatedProjects />
 			</SingleProjectProvider>
 		</motion.div>
   )
 }
 
-export default AutomatedTraffic
+export default AirbnbAnalysis

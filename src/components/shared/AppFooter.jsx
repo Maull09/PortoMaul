@@ -4,6 +4,7 @@ import {
 	FiLinkedin,
 	FiGlobe,
 	FiYoutube,
+	FiInstagram
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 
@@ -28,11 +29,11 @@ const socialLinks = [
 		icon: <FiLinkedin />,
 		url: 'https://www.linkedin.com/in/mohamad-maulana-firdaus-ramadhan/',
 	},
-	// {
-	// 	id: 5,
-	// 	icon: <FiYoutube />,
-	// 	url: 'https://www.youtube.com/c/realstoman',
-	// },
+	{
+		id: 5,
+		icon: <FiInstagram />,
+		url: 'https://www.instagram.com/_ma__ul____/',
+	},
 ];
 
 const AppFooter = () => {

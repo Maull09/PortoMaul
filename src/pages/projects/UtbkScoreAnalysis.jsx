@@ -8,9 +8,16 @@ import { SingleProjectProvider } from '../../context/SingleProjectContext';
 import { motion } from 'framer-motion';
 import { FiClock, FiTag } from 'react-icons/fi';
 
-import ImagePlaceholder from '../../images/Statistik Lengkap UTBK STEI-K22.png'
+import ImagePlaceholder from '../../images/Statistik Lengkap UTBK STEI-K222.png'
 
-
+import {
+	FiFacebook,
+	FiInstagram,
+	FiLinkedin,
+	FiTwitter,
+	FiYoutube,
+  FiGithub
+} from 'react-icons/fi';
 const UtbkScoreAnalysis = () => {
   return (
     <motion.div
@@ -47,7 +54,7 @@ const UtbkScoreAnalysis = () => {
                 <img
                   src={ImagePlaceholder}
                   className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-                  style={{ maxHeight: '5000px', width: '100%', height: 'auto' }}
+                  style={{width: '100%', height: '100%' }}
                   alt="UtbkScoreAnalysis"
                 />
               </div>
@@ -56,6 +63,24 @@ const UtbkScoreAnalysis = () => {
         {/* PROJECT INFO */}
         <div className="block sm:flex gap-0 sm:gap-10 mt-14">
 			<div className="w-full sm:w-1/3 text-left">
+        {/* Single project social sharing */}
+        <div>
+          <p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
+            See The Project
+          </p>
+          <div className="flex items-center gap-3 mt-5">
+            <a
+              href= "https://github.com/Maull09/PortoMaul/"
+              target="__blank"
+              aria-label="Share Project"
+              className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
+            >
+              <span className="text-lg lg:text-2xl">
+                <FiGithub/>
+              </span>
+            </a>
+          </div>
+        </div>
 			</div>
 
 			{/*  Single project right section */}
@@ -95,7 +120,7 @@ const UtbkScoreAnalysis = () => {
         </div>
       </div>
 				
-				
+        <ProjectRelatedProjects />
 			</SingleProjectProvider>
 		</motion.div>
   )

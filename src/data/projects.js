@@ -6,6 +6,7 @@ import MobileImage2 from '../images/airbnb.jpg';
 import UIImage1 from '../images/credit_card.jpg';
 import UIImage2 from '../images/Cover (3).png';
 import UIImage3 from '../images/speed.jpg';
+import UIImage4 from '../images/telecom.jpg';
 
 export const projectsData = [
 	{
@@ -56,5 +57,12 @@ export const projectsData = [
 		category: 'Implemented time series forecasting to predict average vehicle speed utilizing the XGBoost algorithm.',
 		img: UIImage3,
 		href: '/time-series-forecasting',
+	},
+	{
+		id: 8,
+		title: 'Customer Segmentation and Churn Prediction: Strategies for Optimizing Customer Retention in the Telecommunications Industry ',
+		category: 'Developed a comprehensive customer segmentation and churn prediction strategy to enhance customer retention in the telecommunications industry.',
+		img: UIImage4,
+		href: '/customer-segmentation-and-churn-prediction',
 	}
 ];

@@ -8,8 +8,15 @@ import { SingleProjectProvider } from '../../context/SingleProjectContext';
 import { motion } from 'framer-motion';
 import { FiClock, FiTag } from 'react-icons/fi';
 
-import ImagePlaceholder from '../../images/sentimentanalisis.jpg'
-
+import ImagePlaceholder from '../../images/sentimentanalisis2.jpg'
+import {
+	FiFacebook,
+	FiInstagram,
+	FiLinkedin,
+	FiTwitter,
+	FiYoutube,
+  FiGithub
+} from 'react-icons/fi';
 const NaturalLanguageProcessing = () => {
   return (
     <motion.div
@@ -55,6 +62,24 @@ const NaturalLanguageProcessing = () => {
         {/* PROJECT INFO */}
         <div className="block sm:flex gap-0 sm:gap-10 mt-14">
 			<div className="w-full sm:w-1/3 text-left">
+        {/* Single project social sharing */}
+        <div>
+          <p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
+            See The Project
+          </p>
+          <div className="flex items-center gap-3 mt-5">
+            <a
+              href= "https://github.com/Maull09/PortoMaul/"
+              target="__blank"
+              aria-label="Share Project"
+              className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
+            >
+              <span className="text-lg lg:text-2xl">
+                <FiGithub/>
+              </span>
+            </a>
+          </div>
+        </div>
 			</div>
 
 			{/*  Single project right section */}
@@ -94,7 +119,7 @@ const NaturalLanguageProcessing = () => {
         </div>
       </div>
 				
-				
+        <ProjectRelatedProjects />
 			</SingleProjectProvider>
 		</motion.div>
   )
