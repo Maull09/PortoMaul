@@ -104,6 +104,7 @@ const ContactForm = () => {
 							title="Send Message"
 							type="submit"
 							aria-label="Send Message"
+							onClick={handleSubmit}
 						/>
 					</div>
 				</form>
