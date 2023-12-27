@@ -7,7 +7,6 @@
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
 		"framer-motion": "4.1.17",
-		"node": "^19.8.1",
 		"postcss-cli": "^10.1.0",
 		"react": "^18.1.0",
 		"react-countup": "^6.1.1",
@@ -57,8 +56,5 @@
 		"postcss": "^8.4.21",
 		"tailwindcss": "^3.0.24",
 		"concurrently": "^6.4.0"
-	},
-	"engines": {
-		"node": "18"
 	}
 }
