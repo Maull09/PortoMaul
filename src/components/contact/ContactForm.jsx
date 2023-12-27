@@ -1,14 +1,46 @@
 import Button from '../reusable/Button';
 import FormInput from '../reusable/FormInput';
+import React, { useState } from 'react';
 
 const ContactForm = () => {
+	const [formData, setFormData] = useState({
+		name: '',
+		email: '',
+		subject: '',
+		message: ''
+	  });
+	
+	  const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	  };
+	//   https://portofolio-maul.vercel.app/send-email
+	  const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+		  const response = await fetch('http://localhost:3000/send-email', {
+			method: 'POST',
+			headers: {
+			  'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(formData),
+		  });
+	
+		  if (response.ok) {
+			console.log('Email sent successfully');
+			// Reset form atau tampilkan pesan sukses
+		  } else {
+			console.error('Failed to send email');
+		  }
+		} catch (error) {
+		  console.error('Error:', error);
+		}
+	  };
+
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="leading-loose">
 				<form
-					onSubmit={(e) => {
-						e.preventDefault();
-					}}
+					onSubmit={{handleSubmit}}
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
@@ -22,6 +54,8 @@ const ContactForm = () => {
 						inputName="name"
 						placeholderText="Your Name"
 						ariaLabelName="Name"
+						value={formData.name}
+						onChange={handleChange}
 					/>
 					<FormInput
 						inputLabel="Email"
@@ -31,6 +65,8 @@ const ContactForm = () => {
 						inputName="email"
 						placeholderText="Your email"
 						ariaLabelName="Email"
+						value={formData.email}
+						onChange={handleChange}
 					/>
 					<FormInput
 						inputLabel="Subject"
@@ -40,6 +76,8 @@ const ContactForm = () => {
 						inputName="subject"
 						placeholderText="Subject"
 						ariaLabelName="Subject"
+						value={formData.subject}
+						onChange={handleChange}
 					/>
 
 					<div className="mt-6">
@@ -56,6 +94,8 @@ const ContactForm = () => {
 							cols="14"
 							rows="6"
 							aria-label="Message"
+							value={formData.message}
+							onChange={handleChange}
 						></textarea>
 					</div>
 

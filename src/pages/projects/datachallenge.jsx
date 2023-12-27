@@ -20,7 +20,7 @@ import {
   FiGithub
 } from 'react-icons/fi';
 
-const AirbnbAnalysis = () => {
+const DataChallenge = () => {
   return (
     <motion.div
 			initial={{ opacity: 0 }}
@@ -57,7 +57,7 @@ const AirbnbAnalysis = () => {
                   src={ImagePlaceholder}
                   className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
                   style={{width: '100%', height: '100%' }}
-                  alt="Airbnb Analysis"
+                  alt="DataChallenge"
                 />
               </div>
         </div>
@@ -130,4 +130,4 @@ const AirbnbAnalysis = () => {
   )
 }
 
-export default AirbnbAnalysis
+export default DataChallenge

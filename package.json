@@ -17,14 +17,20 @@
 		"react-scripts": "4.0.3",
 		"react-scroll": "^1.8.4",
 		"styled-components": "^5.3.3",
-		"web-vitals": "^1.0.1"
+		"web-vitals": "^1.0.1",
+		"express" : "^4.17.1",
+		"nodemailer" : "^6.6.3",
+		"dotenv" : "^10.0.0",
+		"cors": "2.8.5"
 	},
 	"scripts": {
 		"start": "react-scripts --openssl-legacy-provider start",
 		"build": "yarn run react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"build:css": "postcss src/css/tailwind.css -o src/css/main.css"
+		"build:css": "postcss src/css/tailwind.css -o src/css/main.css",
+		"start-server": "node server.js",
+		"dev": "concurrently \"yarn run start\" \"yarn run start-server\""
 	},
 	"eslintConfig": {
 		"extends": [
@@ -49,7 +55,8 @@
 		"@testing-library/dom": "^8.20.0",
 		"autoprefixer": "^10.4.7",
 		"postcss": "^8.4.21",
-		"tailwindcss": "^3.0.24"
+		"tailwindcss": "^3.0.24",
+		"concurrently": "^6.4.0"
 	},
 	"engines": {
 		"node": "16"

@@ -15,6 +15,7 @@ import PredictingCCApprovals from './pages/projects/PredictingCCApprovals';
 import QuantityPrediction from './pages/projects/QuantityPrediction';
 import TimeSeriesForecasting from './pages/projects/TimeSeriesForecasting';
 import UtbkScoreAnalysis from './pages/projects/UtbkScoreAnalysis.jsx';
+import DataChallenge from './pages/projects/datachallenge.jsx';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -64,6 +65,10 @@ function App() {
 							<Route
 								path="projects/time-series-forecasting"
 								element={<TimeSeriesForecasting />}
+							/>
+							<Route
+								path="projects/customer-segmentation-and-churn-prediction"
+								element={<DataChallenge />}
 							/>
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
