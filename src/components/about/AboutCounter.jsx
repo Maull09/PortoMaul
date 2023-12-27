@@ -1,5 +1,5 @@
-import { useCountUp } from 'react-countup';
-import CounterItem from './CounterItem';
+// import { useCountUp } from 'react-countup';
+// import CounterItem from './CounterItem';
 
 const AboutCounter = () => {
 	

@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { ProjectsContext } from '../../context/ProjectsContext';
-import ProjectsFilter from './ProjectsFilter';
+// import ProjectsFilter from './ProjectsFilter';
 
 // Import images
 import WebImage1 from '../../images/qtyandcs.jpg';
@@ -62,7 +62,6 @@ const ProjectsGrid2 = () => {
 		searchProject,
 		setSearchProject,
 		selectProject,
-		setSelectProject,
 		searchProjectsByTitle,
 		selectProjectsByCategory,
 	} = useContext(ProjectsContext);
