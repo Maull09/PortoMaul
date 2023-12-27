@@ -1,23 +1,12 @@
 import React from 'react'
-
-import ProjectGallery from '../../components/projects/ProjectGallery';
-import ProjectHeader from '../../components/projects/ProjectHeader';
-import ProjectInfo from '../../components/projects/ProjectInfo';
 import ProjectRelatedProjects from '../../components/projects/ProjectRelatedProjects';
 import { SingleProjectProvider } from '../../context/SingleProjectContext';
 import { motion } from 'framer-motion';
-
-import { FiClock, FiTag } from 'react-icons/fi';
-
+import { FiClock} from 'react-icons/fi';
 import ImagePlaceholder from '../../images/telecom2.jpg'
-
 import {
-	FiFacebook,
-	FiInstagram,
-	FiLinkedin,
-	FiTwitter,
-	FiYoutube,
-  FiGithub
+	FiArrowDownCircle,
+  FiGithub,
 } from 'react-icons/fi';
 
 const DataChallenge = () => {
@@ -43,7 +32,7 @@ const DataChallenge = () => {
             <div className="flex items-center mr-10">
               <FiClock className="text-lg text-ternary-dark dark:text-ternary-light" />
               <span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
-                1 January 2024
+              12 November 2023
               </span>
             </div>
           </div>
@@ -72,7 +61,17 @@ const DataChallenge = () => {
           </p>
           <div className="flex items-center gap-3 mt-5">
             <a
-              href= "https://github.com/Maull09/PortoMaul/"
+              href= "https://drive.google.com/file/d/1NN0jdSGDYf0J9AOhVlyFPV0BpCns9cvM/view?usp=sharing"
+              target="__blank"
+              aria-label="Share Project"
+              className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
+            >
+              <span className="text-lg lg:text-2xl">
+                <FiArrowDownCircle/>
+              </span>
+            </a>
+            <a
+              href= "https://github.com/Maull09/Data-Challenge-Bluu"
               target="__blank"
               aria-label="Share Project"
               className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
