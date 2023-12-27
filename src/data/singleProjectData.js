@@ -148,27 +148,27 @@ export const singleProjectData = {
 		Projects: [
 			{
 				id: 1,
-				title: 'Mobile UI',
+				title: 'Automated Traffic Condition Monitoring for Accident Detection Using YOLOv8',
 				img: Image4,
-				href: "https://react.email/docs/integrations/nodemailer"
+				href: "../../projects/automated-traffic-condition-monitoring"
 			},
 			{
 				id: 2,
-				title: 'Web Application',
+				title: 'UTBK Score Analysis',
 				img: Image5,
-				href: ""
+				href: "../../projects/utbk-score-analysis"
 			},
 			{
 				id: 3,
-				title: 'UI Design',
+				title: 'AirBnB Analysis',
 				img: Image6,
-				href: ""
+				href: "../../projects/airbnb-analysis"
 			},
 			{
 				id: 4,
-				title: 'Kabul Mobile App UI',
+				title: 'Predicting Credit Card Approvals',
 				img: Image3,
-				href: ""
+				href: "../../projects/credit-card-approval-predictor"
 			},
 		],
 	},

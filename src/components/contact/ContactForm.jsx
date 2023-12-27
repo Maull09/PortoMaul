@@ -1,6 +1,7 @@
 import Button from '../reusable/Button';
 import FormInput from '../reusable/FormInput';
 import React, { useState } from 'react';
+import nodemailer from 'nodemailer';
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -10,37 +11,44 @@ const ContactForm = () => {
 		message: ''
 	  });
 	
-	  const handleChange = (e) => {
-		setFormData({ ...formData, [e.target.name]: e.target.value });
-	  };
+	const handleChange = (e) => {
+	setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
 	  
-	  const handleSubmit = async (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		try {
-		  const response = await fetch('https://portofolio-maul.vercel.app/send-email', {
-			method: 'POST',
-			headers: {
-			  'Content-Type': 'application/json',
+		// Set up your transporter for Gmail
+		const transporter = nodemailer.createTransport({
+			service: 'gmail',
+			host: 'smtp.gmail.com',
+			auth: {
+				user: 'renaubert09@gmail.com', // Replace with actual user
+				pass: '@ubert123', // Replace with actual password
 			},
-			body: JSON.stringify(formData),
-		  });
-	
-		  if (response.ok) {
+    	});
+
+		// Email options
+		const options = {
+			from: formData.email , // Replace with your from email
+			to: 'renaubert09@gmail.com', // Assuming formData contains the recipient's email
+			subject: formData.subject, // Assuming formData contains the subject
+			text: formData.message // Assuming formData contains the message
+		};
+
+		try {
+			await transporter.sendMail(options);
 			console.log('Email sent successfully');
-			// Reset form atau tampilkan pesan sukses
-		  } else {
-			console.error('Failed to send email');
-		  }
+			// Reset form or display success message
 		} catch (error) {
-		  console.error('Error:', error);
+			console.error('Error:', error);
 		}
-	  };
+	};
 
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="leading-loose">
 				<form
-					onSubmit={{handleSubmit}}
+					onSubmit={handleSubmit}
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
@@ -104,7 +112,6 @@ const ContactForm = () => {
 							title="Send Message"
 							type="submit"
 							aria-label="Send Message"
-							onClick={handleSubmit}
 						/>
 					</div>
 				</form>
