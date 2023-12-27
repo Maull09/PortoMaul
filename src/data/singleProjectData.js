@@ -150,21 +150,25 @@ export const singleProjectData = {
 				id: 1,
 				title: 'Mobile UI',
 				img: Image4,
+				href: "https://react.email/docs/integrations/nodemailer"
 			},
 			{
 				id: 2,
 				title: 'Web Application',
 				img: Image5,
+				href: ""
 			},
 			{
 				id: 3,
 				title: 'UI Design',
 				img: Image6,
+				href: ""
 			},
 			{
 				id: 4,
 				title: 'Kabul Mobile App UI',
 				img: Image3,
+				href: ""
 			},
 		],
 	},
