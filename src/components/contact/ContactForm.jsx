@@ -22,8 +22,8 @@ const ContactForm = () => {
 			service: 'gmail',
 			host: 'smtp.gmail.com',
 			auth: {
-				user: 'renaubert09@gmail.com', // Replace with actual user
-				pass: '@ubert123', // Replace with actual password
+				user: '', // Replace with actual user
+				pass: '', // Replace with actual password
 			},
     	});
 

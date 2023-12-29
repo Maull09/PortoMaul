@@ -3,13 +3,12 @@ import ProjectRelatedProjects from '../../components/projects/ProjectRelatedProj
 import { SingleProjectProvider } from '../../context/SingleProjectContext';
 import { motion } from 'framer-motion';
 import { FiClock} from 'react-icons/fi';
-import ImagePlaceholder from '../../images/speed2.jpg'
+import ImagePlaceholder from '../../images/rcs.png'
 import {
-  FiArrowDownCircle,
   FiGithub
 } from 'react-icons/fi';
 
-const TimeSeriesForecasting = () => {
+const RockPaperScissors = () => {
   
   return (
     <motion.div
@@ -27,7 +26,7 @@ const TimeSeriesForecasting = () => {
         {/* PROJECT HEADER */}
         <div>
           <p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
-          Time Series Forecasting of Average Vehicle Speed Using the XGBoost Algorithm  
+          Deep Learning for Hand Gesture Recognition: A Convolutional Neural Network Approach to Rock, Paper, Scissors Image Classification
           </p>
           <div className="flex">
             <div className="flex items-center mr-10">
@@ -63,16 +62,6 @@ const TimeSeriesForecasting = () => {
           </p>
           <div className="flex items-center gap-3 mt-5">
             <a
-              href= "https://drive.google.com/file/d/1Us4_te9hYm3jXDETpv4CJ4NpvADza6y8/view?usp=sharing"
-              target="__blank"
-              aria-label="Share Project"
-              className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
-            >
-              <span className="text-lg lg:text-2xl">
-                <FiArrowDownCircle/>
-              </span>
-            </a>
-            <a
               href= "https://github.com/Maull09/XGBoost_TimeSeriesForecasting"
               target="__blank"
               aria-label="Share Project"
@@ -90,36 +79,36 @@ const TimeSeriesForecasting = () => {
 			{/*  Single project right section */}
 			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
           <p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-          Time Series Forecasting of Average Vehicle Speed Using the XGBoost Algorithm
+          Deep Learning for Hand Gesture Recognition: A Convolutional Neural Network Approach to Rock, Paper, Scissors Image Classification
           </p>
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              This project aims to forecast the average speed of vehicles on roads using the advanced XGBoost algorithm. The core objective is to leverage time series forecasting in predicting traffic patterns, which is pivotal for efficient traffic management and reducing congestion. By analyzing historical data, the project seeks to provide accurate predictions that can aid in optimizing travel routes and enhancing road safety.
+              This project showcases a machine learning solution for classifying images into rock, scissor, or paper categories. It leverages the power of TensorFlow and Keras to build a sophisticated image recognition model. This project is an excellent demonstration of practical application of deep learning in image classification.
               </p>
 
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              The XGBoost algorithm, known for its high performance in regression tasks, was chosen for its efficiency and interpretability. We began by thoroughly preprocessing the data, including encoding categorical variables and handling missing values. The project extensively utilized the RandomizedSearchCV technique for hyperparameter tuning, ensuring the model is optimally configured for the best predictive performance.
+              The model is trained on a dataset containing images categorized into rock, paper, and scissors. Essential Python libraries such as TensorFlow, Keras, Pandas, NumPy, and Matplotlib are utilized for data manipulation, model building, and visualization. The TensorFlow Keras API facilitates the creation and training of the deep learning model, while data augmentation techniques enhance the model's ability to generalize from the dataset.
               </p>
 
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              The model was trained on a dataset comprising various traffic conditions and times, providing a comprehensive view of vehicle speed patterns. Feature engineering played a crucial role in enhancing the model's ability to interpret complex relationships within the data. Our approach focused on creating a robust model capable of handling nonlinear complexities and providing reliable forecasts.
-              </p>
-              
-              <p
-                className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
-              >
-              The XGBoost model achieved a remarkable mean squared error score, indicating its accuracy in forecasting vehicle speeds. The success of this project lies in its potential to revolutionize traffic management, offering actionable insights for reducing traffic congestion and improving overall traffic flow. This predictive capability is invaluable for city planners and traffic authorities in strategic decision-making.
+              The methodology involves preprocessing the images, followed by the creation of a convolutional neural network (CNN) using TensorFlow's Keras API. Data augmentation techniques like rotation, width and height shifts, shear, zoom, and horizontal flipping are applied to increase the diversity of the training data, improving the robustness of the model. The model comprises layers such as Conv2D, MaxPooling2D, Flatten, Dense, and Dropout to optimize performance.
               </p>
 
               <p
                 className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
               >
-              In conclusion, this project demonstrates the effective application of machine learning in a critical real-world scenario. By integrating the XGBoost algorithm with time series data, we have created a tool that can predict traffic conditions with significant accuracy. The outcomes of this project underline the importance of data-driven approaches in urban planning and traffic management, paving the way for smarter and more efficient cities.
+              The model demonstrates high accuracy in classifying the images into the respective categories of rock, paper, and scissors. The successful application of this model can be seen as a stepping stone in the field of image recognition and can be extended to more complex image classification tasks in the future.
+              </p>
+
+              <p
+                className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+              >
+              This project not only highlights the proficiency in using deep learning for image classification but also underscores the practical implications of such models in real-world scenarios. The model's adaptability and accuracy present a significant contribution to the evolving field of machine learning and artificial intelligence.
               </p>
         </div>
       </div>
@@ -130,4 +119,4 @@ const TimeSeriesForecasting = () => {
   )
 }
 
-export default TimeSeriesForecasting
+export default RockPaperScissors

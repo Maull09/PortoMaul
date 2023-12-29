@@ -7,6 +7,7 @@ import UIImage1 from '../images/credit_card.jpg';
 import UIImage2 from '../images/Cover (3).png';
 import UIImage3 from '../images/speed.jpg';
 import UIImage4 from '../images/telecom.jpg';
+import UIImage5 from '../images/rcs2.png';
 
 export const projectsData = [
 	{
@@ -64,5 +65,12 @@ export const projectsData = [
 		category: 'Developed a comprehensive customer segmentation and churn prediction strategy to enhance customer retention in the telecommunications industry.',
 		img: UIImage4,
 		href: '/customer-segmentation-and-churn-prediction',
+	},
+	{
+		id: 9,
+		title: 'Deep Learning for Hand Gesture Recognition: A Convolutional Neural Network Approach to Rock, Paper, Scissors Image Classification',
+		category: 'A deep learning model leveraging convolutional neural networks to accurately classify images into rock, paper, or scissors, demonstrating the application of advanced AI in image recognition.',
+		img: UIImage5,
+		href: '/rock-paper-scissors',
 	}
 ];

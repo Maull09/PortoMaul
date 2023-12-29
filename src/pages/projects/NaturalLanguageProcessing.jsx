@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import { FiClock} from 'react-icons/fi';
 import ImagePlaceholder from '../../images/sentimentanalisis2.jpg'
 import {
-	FiArrowDownCircle
+	FiArrowDownCircle,
+  FiGithub
 } from 'react-icons/fi';
 
 const NaturalLanguageProcessing = () => {
@@ -67,6 +68,16 @@ const NaturalLanguageProcessing = () => {
             >
               <span className="text-lg lg:text-2xl">
                 <FiArrowDownCircle/>
+              </span>
+            </a>
+            <a
+              href= "https://github.com/Maull09/NLP-BiGru"
+              target="__blank"
+              aria-label="Share Project"
+              className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
+            >
+              <span className="text-lg lg:text-2xl">
+                <FiGithub/>
               </span>
             </a>
           </div>
